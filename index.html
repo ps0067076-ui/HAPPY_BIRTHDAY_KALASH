@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Caveat:wght@500;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+<!-- ============ ENVELOPE INTRO ============ -->
+<div class="envelope-overlay" id="envelopeOverlay">
+  <div class="envelope" id="envelope">
+    <div class="env-shadow"></div>
+    <div class="env-body">
+      <div class="env-flap"></div>
+      <div class="seal" id="seal">&#10084;</div>
+    </div>
+  </div>
+  <p class="env-hint">tap the heart to open your surprise</p>
+</div>
+<div class="confetti-wrap" id="confettiWrap"></div>
+
+<div class="floaters" id="floaters"></div>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <svg class="doodle doodle-flower-left" viewBox="0 0 100 100" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2"><circle cx="50" cy="30" r="12"/><circle cx="30" cy="50" r="12"/><circle cx="70" cy="50" r="12"/><circle cx="50" cy="65" r="12"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></g></svg>
+  <div class="eyebrow">A little something for you</div>
+  <h1>Happy Birthday, Kalash </h1>
+  <p class="sub" id="subText">
+
+  </p>
+  <div class="name-tag">with love, Prince Sharma</div>
+  <div class="scroll-cue">
+    scroll for more
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4v16m0 0l-6-6m6 6l6-6"/></svg>
+  </div>
+  <svg class="doodle doodle-flower-right" viewBox="0 0 100 100" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2"><circle cx="50" cy="30" r="12"/><circle cx="30" cy="50" r="12"/><circle cx="70" cy="50" r="12"/><circle cx="50" cy="65" r="12"/><circle cx="50" cy="50" r="8" fill="currentColor" stroke="none"/></g></svg>
+</section>
+
+<!-- ============ LOVE METER ============ -->
+<section class="love-meter-section">
+  <div class="section-head">
+    <div class="kicker">just to prove it</div>
+    <h2>How much do you enjoy it?</h2>
+  </div>
+  <div class="meter-wrap">
+    <input type="range" id="loveSlider" min="0" max="100" value="15">
+    <p class="meter-label" id="meterLabel">try dragging it all the way &rarr;</p>
+  </div>
+</section>
+
+<!-- ============ DIARY ============ -->
+<section class="diary" id="diary">
+  <div class="section-head">
+    <div class="kicker">turn the page</div>
+    <h2>A few notes from my side</h2>
+  </div>
+  <div class="diary-spine">
+    <div class="note"><div class="tape"></div><div class="date">Note one</div><p>"Kon janta tha ki ek random message se hum itne acche dost ban jayenge? Sach batau toh pehle din bilkul nahi laga tha ki hamari itni jamne wali hai. But internet is crazy, aur mujhe ek mast dost mil gaya. Cheers to, Kalash! And thanks to Neetu!"</p></div>
+    <div class="note"><div class="tape"></div><div class="date">Note two</div><p>Late seen karna aur ghanton baad reply dena tumhari official hobby hai! Par jab bhi baat hoti hai, vibe ekdum mast ho jati hai. Isliye tumhara reply wait karna bhi bura nahi lagta.</p></div>
+    <div class="note"><div class="tape"></div><div class="date">Note three</div><p>Sach batau toh wo nightout hi humari sabse best memory hai ab tak ki and it's our second meeting. Na koi tension, bas ghumna, late night vibes aur endless baatein. Aise scenes aur plans future me aage bhi bante rehne chahiye!
+</p></div>
+    <div class="note"><div class="tape"></div><div class="date">Note four</div><p>Waise toh duniya ke liye tum Kalash ho, par mere liye tum 'Motion Sensor' ho! Thoda hilna-dulna padta hai tab jaake tumhara reply ya reaction milta hai. Inside jokes aur yeh bakwas nicknames hi toh hume bakkiyo se alag banate h SO 'Motion Sensor' kaisi ho?
+sab badhiya?
+ </p></div>
+    <div class="note"><div class="tape"></div><div class="date">Note five</div><p>Waiting for a lots of aage ka dher saare future plans, nightouts aur trips ke liye excited hu! Hope yeh saal tumhare liye ekdum mast rahe, life me khoob maje kro... aur bas thoda jaldi reply karna start kar do ma'am! Happy Birthday, Kalash!</p></div>
+  </div>
+</section>
+
+<!-- ============ PHOTO ============ -->
+<section class="photo-section">
+  <div class="section-head">
+    <div class="kicker">this is her</div>
+    <h2>Birth-Day person</h2>
+  </div>
+  <figure class="polaroid">
+    <div class="tape"></div>
+    <div class="frame">
+      <img src="her_6.JPG" alt="Her">
+     
+    </div>
+    <figcaption>Keep shining, Motion Sensor! ✨</figcaption>
+  </figure>
+</section>
+
+<!-- ============ SLIDESHOW ============ -->
+<section class="slideshow-section">
+  <div class="section-head">
+    <div class="kicker">our moments</div>
+    <h2>A little reel of us</h2>
+  </div>
+  <div class="slideshow">
+    <div class="slides" id="slides">
+      <div class="slide ph1 active" data-caption="Swipe for good vibes only ➡️"><img src="her_1.JPG"></div>
+      <div class="slide ph2" data-caption="Aesthetic vibe, basic posing ✨"><img src="her_2.JPG"> </div>
+      <div class="slide ph3" data-caption="Candid lag raha hai, par actually planned tha 📸"><img src="her_5.JPG"> </div>
+      <div class="slide ph4" data-caption="Candid lag raha hai, par actually planned tha 📸"><img src="her_8.JPG"> </div>
+      <div class="slide ph5" data-caption="Posing level: Pro, Reply level: Slow ⚡"><img src="her_4.JPG"> </div>
+    </div>
+    <button class="arrow left" id="prevBtn" aria-label="previous">&#8249;</button>
+    <button class="arrow right" id="nextBtn" aria-label="next">&#8250;</button>
+  </div>
+  <div class="dots" id="dots"></div>
+  <p class="slide-caption" id="slideCaption">Swipe for good vibes only ➡️"</p>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<section class="footer">
+  <h3>Happy Birthday, Kalash</h3>
+  <div class="heart-divider">&#10084;</div>
+  <p>Here's to another year of yours.</p>
+  <button class="secret-btn" id="secretBtn">
+    <span class="lock">&#128274;</span> tap for one more secret
+  </button>
+  <div class="secret-message" id="secretMessage">
+    <p>No matter how busy life gets or how far we are, just know that I’m always here for you. Ek message door, hamesha, jab chaho text kr skti ho jab bhi need I'm always there for you. Stay the same crazy, amazing person you are. Happy Birthday, Kalash! 🤍</p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
